@@ -61,7 +61,7 @@ stages:
       artifact: drop
 
 - stage: Deploy
-  displayName: 'Deploy Azure Web App: flask-ml-service-kishan'
+  displayName: 'Deploy Web App'
   dependsOn: Build
   condition: succeeded()
   jobs:
@@ -80,7 +80,7 @@ stages:
             displayName: 'Use Python version'
 
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : '
+            displayName: 'Deploy Azure Web App : flask-ml-service-kishan'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
