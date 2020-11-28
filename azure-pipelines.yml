@@ -11,7 +11,7 @@ variables:
   azureServiceConnectionId: '768ba92a-600f-406d-b567-7fe79e871d88'
   
   # Web app name
-  webAppName: ''
+  webAppName: 'flask-ml-service-kishan'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
